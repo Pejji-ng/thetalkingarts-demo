@@ -73,19 +73,38 @@ if (cookieBanner && acceptCookies) {
     });
 }
 
-// Contact form
+// Contact form -> real WhatsApp handoff (was a fake success state; now actually delivers the enquiry)
 const form = document.getElementById('contact-form');
+const WA_NUMBER = '2347084554203';
 if (form) {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
         const btn = form.querySelector('.btn-submit');
         const orig = btn.textContent;
-        btn.textContent = 'Sending...';
+        const fields = form.querySelectorAll('input, select, textarea');
+        const name = (fields[0] && fields[0].value || '').trim();
+        const phone = (fields[1] && fields[1].value || '').trim();
+        const service = (fields[2] && fields[2].value || '').trim();
+        const details = (fields[3] && fields[3].value || '').trim();
+        const text =
+            'New quote request from your website\n\n' +
+            'Name: ' + name + '\n' +
+            'Phone: ' + phone + '\n' +
+            'Service: ' + service + '\n' +
+            'Details: ' + details;
+        const waUrl = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(text);
+        btn.textContent = 'Opening WhatsApp...';
         btn.style.opacity = '0.7';
+        const win = window.open(waUrl, '_blank');
         setTimeout(() => {
             btn.style.opacity = '1';
-            btn.textContent = 'Request Sent ✓';
-            setTimeout(() => { btn.textContent = orig; form.reset(); }, 3000);
-        }, 800);
+            if (win) {
+                btn.textContent = 'Request Sent ✓';
+                setTimeout(() => { btn.textContent = orig; form.reset(); }, 4000);
+            } else {
+                // popup blocked: send them via the current tab instead so the enquiry still goes through
+                window.location.href = waUrl;
+            }
+        }, 600);
     });
 }
