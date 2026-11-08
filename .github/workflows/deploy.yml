@@ -29,8 +29,7 @@ jobs:
             ./ _deploy/
 
       - name: Deploy to Cloudflare Pages
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: 2e3840298d01bbfc3bad649f37ce39e5
-          command: pages deploy _deploy --project-name=tta-dazzle --branch=main
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: 2e3840298d01bbfc3bad649f37ce39e5
+        run: npx -y wrangler@latest pages deploy _deploy --project-name=tta-dazzle --branch=main
