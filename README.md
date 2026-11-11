@@ -15,6 +15,7 @@ All site files live at the repo root:
 - `wear.html` — TTA Wear, the clothing and club-jersey shop (self-contained: inline CSS + JS,
   served at `/wear`). Stock, prices and photos are edited in the `CATALOGUE` block at the top of
   its `<script>`; orders are sent as a WhatsApp message, so there is no backend.
+- `wear-img/` — real TTA Wear photos (WebP), the rail video and the share image used by `wear.html`
 - `privacy.html` — privacy policy
 - `_headers` — Cloudflare Pages headers
 - `*.jpg` — images (cards, brand kit, og, packaging, etc.)

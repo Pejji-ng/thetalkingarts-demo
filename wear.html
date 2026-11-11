@@ -7,7 +7,7 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="TTA Wear | Wear your colours">
 <meta property="og:description" content="Club jerseys, custom name and number printing, team kits and streetwear. Order on WhatsApp, delivered nationwide.">
-<meta property="og:image" content="https://thetalkingarts.com/og.jpg">
+<meta property="og:image" content="https://thetalkingarts.com/wear-img/og.jpg">
 <meta property="og:url" content="https://thetalkingarts.com/wear">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%2306070f'/><path d='M36 16Q50 28 64 16L78 21L96 38L88 54L77 47V88H23V47L12 54L4 38L22 21Z' fill='%231e56e6'/></svg>">
@@ -16,7 +16,7 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"ClothingStore","name":"TTA Wear by TheTalkingArts",
 "description":"Club jerseys, custom name and number printing, team kits and streetwear in Ikotun, Lagos. Delivered nationwide.",
-"url":"https://thetalkingarts.com/wear","telephone":"+2347084554203","image":"https://thetalkingarts.com/og.jpg",
+"url":"https://thetalkingarts.com/wear","telephone":"+2347084554203","image":"https://thetalkingarts.com/wear-img/og.jpg",
 "parentOrganization":{"@type":"PrintShop","name":"TheTalkingArts","url":"https://thetalkingarts.com"},
 "address":{"@type":"PostalAddress","streetAddress":"23 Idimu Road, Ikotun","addressLocality":"Lagos","addressCountry":"NG"},
 "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"19:00"}],
@@ -107,7 +107,7 @@ h1 .ln:nth-child(2)>span{animation-delay:.12s}
 @keyframes rise{from{transform:translateY(105%)}}
 h1 em{font-size:.86em;line-height:1}
 .lede{font-size:clamp(16px,1.5vw,19px);color:var(--soft);max-width:50ch;margin:18px 0 26px}
-.trust{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:28px;font-size:13.5px;font-weight:600;color:var(--mut)}
+.trust{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:20px;font-size:13.5px;font-weight:600;color:var(--mut)}
 .trust li{display:flex;align-items:center;gap:8px}
 .trust b{color:var(--white)}
 .trust svg{width:17px;height:17px;color:var(--blue2)}
@@ -206,8 +206,8 @@ h1 em{font-size:.86em;line-height:1}
 .empty{padding:34px 0 10px;font-size:17px;color:var(--soft)}
 
 /* label */
-.lgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.lc .pc-art{padding:30px 48px 22px}
+.lgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.lc .pc-art{padding:24px 28px 18px}
 .lc .pc-body p.d{font-size:14px;color:var(--mut)}
 .cols{display:flex;gap:7px}
 .col{width:28px;height:28px;border-radius:50%;border:2px solid var(--card);box-shadow:0 0 0 1.5px var(--line2)}
@@ -359,11 +359,58 @@ footer{background:#04050c;border-top:1px solid var(--line);padding-block:52px 12
 .cookie button{background:var(--blue);color:var(--white);font-weight:800;font-size:13px;padding:10px 16px;border-radius:9px;flex:none}
 #fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:120}
 
+/* real photos: hero proof, rail film, gallery, lightbox */
+.proof{display:inline-flex;align-items:center;gap:12px;margin-top:24px;font-size:13.5px;font-weight:700;color:var(--soft)}
+.proof:hover{color:var(--white)}
+.proof-pics{display:flex;flex:none}
+.proof-pics img{width:40px;height:40px;border-radius:50%;object-fit:cover;border:2px solid var(--bg);margin-left:-11px;box-shadow:0 0 0 1px var(--line2)}
+.proof-pics img:first-child{margin-left:0}
+.proof u{text-decoration-color:var(--blue2);text-underline-offset:4px;color:var(--white)}
+.film{position:relative;border-radius:20px;overflow:hidden;border:1px solid var(--line);height:clamp(200px,26vw,330px);margin-bottom:46px;background:var(--well)}
+.film video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 14%}
+.film::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,7,15,.9) 0%,rgba(6,7,15,.45) 44%,rgba(6,7,15,0) 72%),linear-gradient(0deg,rgba(6,7,15,.55),transparent 45%);pointer-events:none}
+.film-cap{position:absolute;left:26px;bottom:22px;z-index:1;max-width:min(430px,72%)}
+.film-cap small{display:inline-flex;align-items:center;gap:8px;font-size:11.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ice);margin-bottom:10px}
+.film-cap small i{width:8px;height:8px;border-radius:50%;background:var(--blue2);box-shadow:0 0 0 4px rgba(79,130,255,.25)}
+.film-cap b{display:block;font-family:var(--disp);font-weight:900;font-size:clamp(34px,4.4vw,56px);line-height:.9;text-transform:uppercase}
+.film-cap span{display:block;color:var(--soft);font-size:14.5px;margin-top:8px}
+.film-ctl{position:absolute;right:14px;bottom:14px;z-index:1;width:42px;height:42px;border-radius:50%;background:rgba(6,7,15,.72);border:1px solid var(--line2);display:flex;align-items:center;justify-content:center}
+.film-ctl:hover{background:var(--blue);border-color:var(--blue)}
+.film-ctl svg{width:14px;height:14px}
+.flip.cam{bottom:auto;top:36px;background:var(--blue);border-color:var(--blue);color:var(--white)}
+.flip.cam:hover{background:var(--blue2);border-color:var(--blue2)}
+.work{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.shot{position:relative;display:block;width:100%;min-width:0;aspect-ratio:3/4;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:var(--card);cursor:zoom-in;transition:border-color .2s}
+.shot.big{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+.shot img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.shot:hover{border-color:var(--blue2)}
+.shot:hover img{transform:scale(1.06)}
+.shot::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(6,7,15,.88) 0%,rgba(6,7,15,0) 44%);pointer-events:none}
+.shot span{position:absolute;left:14px;right:14px;bottom:12px;z-index:1;font-family:var(--disp);font-weight:900;font-size:26px;line-height:1;letter-spacing:.02em;text-transform:uppercase;color:var(--white);text-align:left}
+.shot.big span{font-size:40px;left:20px;bottom:18px}
+.shot span small{display:block;font-family:var(--body);font-size:11px;font-weight:800;letter-spacing:.12em;color:var(--ice);margin-bottom:5px}
+.shot.next{background:linear-gradient(160deg,var(--blue) 0%,#1741b4 100%);border-color:transparent;cursor:pointer;display:flex;flex-direction:column;justify-content:flex-end;padding:18px;text-align:left}
+.shot.next::after{display:none}
+.shot.next b{font-family:var(--disp);font-weight:900;font-size:clamp(38px,3.8vw,52px);line-height:.88;text-transform:uppercase}
+.shot.next i{font-style:normal;font-size:14px;font-weight:700;color:var(--ice);margin-top:10px}
+.lb{position:fixed;inset:0;z-index:110;background:rgba(3,4,10,.93);display:flex;align-items:center;justify-content:center;padding:calc(16px + env(safe-area-inset-top,0px)) 16px calc(16px + env(safe-area-inset-bottom,0px));opacity:0;visibility:hidden;transition:opacity .2s,visibility 0s .2s}
+.lb.on{opacity:1;visibility:visible;transition:opacity .2s}
+.lb-in{display:flex;flex-direction:column;align-items:center;gap:14px;max-width:min(520px,100%);max-height:100%}
+.lb img{max-width:100%;max-height:calc(100vh - 210px);max-height:calc(100dvh - 210px);border-radius:14px;border:1px solid var(--line2);object-fit:contain;background:var(--card)}
+.lb p{font-weight:700;text-align:center;font-size:15px}
+.lb p small{font-weight:600;color:var(--mut);margin-left:10px;font-variant-numeric:tabular-nums}
+.lb-x{position:absolute;top:calc(14px + env(safe-area-inset-top,0px));right:14px;background:var(--bg)}
+.lb-nav{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;background:var(--bg);border:1px solid var(--line2);font-size:24px;line-height:1}
+.lb-nav:hover{border-color:var(--blue2)}
+.lb-nav.prev{left:14px}.lb-nav.next{right:14px}
+.quick .rom{font-family:var(--body);font-size:12.5px;font-weight:700;padding:0 12px}
+.quick .rom[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+
 /* reveal: only what starts below the fold */
 .rv{transition:opacity .6s,transform .6s}
 .rv.pre{opacity:0;transform:translateY(26px)}
 
-@media(max-width:1020px){.grid{grid-template-columns:repeat(3,1fr)}.nav-links{display:none}.lgrid{grid-template-columns:1fr 1fr}.lc.cta{grid-column:1/-1}}
+@media(max-width:1020px){.grid{grid-template-columns:repeat(3,1fr)}.nav-links{display:none}.lgrid{grid-template-columns:1fr 1fr}}
 @media(max-width:860px){
   .hero-grid{grid-template-columns:1fr;padding-block:34px 40px;gap:26px}
   .stage{max-width:270px}
@@ -382,6 +429,9 @@ footer{background:#04050c;border-top:1px solid var(--line);padding-block:52px 12
   body.has-bag .waf{display:none}
   body.has-bag .toast{bottom:calc(86px + env(safe-area-inset-bottom,0px))}
   .squad-art{order:-1;max-width:460px;width:100%;margin:0 auto}
+  .work{grid-template-columns:repeat(2,1fr);gap:10px}
+  .shot span{font-size:22px}.shot.big span{font-size:32px}
+  .lb-nav{top:auto;bottom:calc(14px + env(safe-area-inset-bottom,0px));transform:none}
 }
 @media(max-width:700px){
   .grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin-inline:-20px;padding:4px 20px 16px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
@@ -399,12 +449,15 @@ footer{background:#04050c;border-top:1px solid var(--line);padding-block:52px 12
   .tape.a{font-size:17px}.tape.b{font-size:21px}
   .tryit .btn span{display:none}
   .designer{padding:18px}
+  .film{height:210px;margin-bottom:34px}
+  .film-cap{left:18px;bottom:16px}
+  .film-cap span{display:none}
 }
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   .tape div,.stage .kin,.sizes.need,.bagbtn.bump b,.beam,h1 .ln>span,.hero-stage,.pc:hover .hang,.pc.sway .hang,.cust-stage .pr{animation:none}
   .rv,.rv.pre{opacity:1;transform:none;transition:none}
-  .btn:hover,.pc:hover{transform:none}
+  .btn:hover,.pc:hover,.shot:hover img{transform:none}
   .hero,.cust-stage::before{transition:none}
   .pc-j{transition:none}
 }
@@ -419,7 +472,7 @@ footer{background:#04050c;border-top:1px solid var(--line);padding-block:52px 12
 
 <nav class="nav" aria-label="Main"><div class="wrap nav-in">
   <a class="logo" href="#top" aria-label="TTA Wear home"><span>TTA<b>Wear</b></span><small>by TheTalkingArts</small></a>
-  <div class="nav-links"><a href="#rack">Jerseys</a><a href="#custom">Name &amp; Number</a><a href="#label">The Label</a><a href="#squad">Team Kits</a><a href="#help">Sizes &amp; Help</a></div>
+  <div class="nav-links"><a href="#rack">Jerseys</a><a href="#custom">Name &amp; Number</a><a href="#work">Real Prints</a><a href="#label">The Label</a><a href="#squad">Team Kits</a></div>
   <button class="bagbtn" id="bagOpen" type="button" aria-haspopup="dialog">Bag <b id="bagCount">0</b></button>
 </div></nav>
 
@@ -436,6 +489,7 @@ footer{background:#04050c;border-top:1px solid var(--line);padding-block:52px 12
         <a class="btn btn-blue" href="#rack">Shop jerseys &darr;</a>
         <a class="btn btn-wa" href="https://wa.me/2347084554203?text=Hi%20TTA%20Wear!%20I%20want%20to%20order%20a%20jersey." target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg>Order on WhatsApp</a>
       </div>
+      <a class="proof" href="#work"><span class="proof-pics"><img src="wear-img/barca-gold-21-t.webp" alt="" width="40" height="40"><img src="wear-img/chelsea-olaitan-t.webp" alt="" width="40" height="40"><img src="wear-img/milan-opeyemi-t.webp" alt="" width="40" height="40"></span><span>Printed for real customers. <u>See the shirts</u> &darr;</span></a>
       <ul class="trust">
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>RC</b> registered</span></li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4v-7h16v7h-2M8 14h8v7H8z"/></svg><span>Printed <b>in-house</b></span></li>
@@ -462,6 +516,11 @@ footer{background:#04050c;border-top:1px solid var(--line);padding-block:52px 12
 
 <main>
 <section class="blk rail" id="rack"><div class="wrap">
+  <div class="film rv">
+    <video id="railVid" muted loop playsinline preload="none" poster="wear-img/rail.webp" aria-label="A slow pan along our rail of club jerseys on hangers"><source src="wear-img/rail.mp4" type="video/mp4"></video>
+    <div class="film-cap"><small><i></i>Our actual rail</small><b>Straight off the hanger</b><span>Pick a shirt below and we print your name on it.</span></div>
+    <button class="film-ctl" id="railCtl" type="button" aria-label="Pause the video"></button>
+  </div>
   <div class="head rv">
     <div><p class="kicker">The matchday rack</p><h2>Club <em>jerseys</em></h2></div>
     <div class="tools">
@@ -473,7 +532,7 @@ footer{background:#04050c;border-top:1px solid var(--line);padding-block:52px 12
   <div class="grid" id="kitGrid"></div>
   <p class="empty" id="rackEmpty" hidden></p>
   <noscript><p class="fine">Turn on JavaScript to browse the rack, or <a href="https://wa.me/2347084554203">message us on WhatsApp</a> with the club you want.</p></noscript>
-  <p class="fine">Prices shown are sample starting points. We confirm stock and your exact total on WhatsApp. Can&rsquo;t see your club? <a href="https://wa.me/2347084554203?text=Hi%20TTA%20Wear!%20Do%20you%20have%20this%20jersey%3A%20" target="_blank" rel="noopener">Ask us for it</a>.</p>
+  <p class="fine">Prices shown are sample starting points. We confirm stock and your exact total on WhatsApp. Can&rsquo;t see your club? <a href="https://wa.me/2347084554203?text=Hi%20TTA%20Wear!%20Do%20you%20have%20this%20jersey%3A%20" target="_blank" rel="noopener">Ask us for it</a>. We also do <a href="https://wa.me/2347084554203?text=Hi%20TTA%20Wear!%20I%20want%20a%20kids%27%20set.%0AClub%3A%20%0AChild%27s%20age%3A%20%0AName%20and%20number%3A%20" target="_blank" rel="noopener">kids&rsquo; sets</a>, shirt and shorts together.</p>
 </div></section>
 
 <section class="blk alt" id="custom"><div class="wrap cust">
@@ -498,7 +557,14 @@ footer{background:#04050c;border-top:1px solid var(--line);padding-block:52px 12
   </div>
 </div></section>
 
-<section class="blk" id="label"><div class="wrap">
+<section class="blk" id="work"><div class="wrap">
+  <div class="head rv">
+    <div><p class="kicker">Fresh off the press</p><h2>Real shirts, real <em>names</em></h2><p class="sub">Every shirt here was printed by us for a customer. Tap a photo for a closer look.</p></div>
+  </div>
+  <div class="work" id="workGrid"></div>
+</div></section>
+
+<section class="blk alt" id="label"><div class="wrap">
   <div class="head rv">
     <div><p class="kicker">The label</p><h2>TTA <em>streetwear</em></h2><p class="sub">Our own pieces, printed by the same hands that print for brands across Lagos.</p></div>
   </div>
@@ -539,6 +605,7 @@ footer{background:#04050c;border-top:1px solid var(--line);padding-block:52px 12
     <div class="faq-list">
       <details open><summary>How do I order?</summary><p>Add what you want to your bag and tap Send order on WhatsApp. We reply to confirm stock and your total, then arrange payment and delivery with you. You can also just message us with what you need.</p></details>
       <details><summary>Can you print my name and number?</summary><p>Yes. Printing is what we do every day, so names and numbers are pressed in our own workshop. Try it in the Name &amp; Number section and send us the result.</p></details>
+      <details><summary>Do you have kids&rsquo; sizes?</summary><p>Yes. We do kids&rsquo; sets with a shirt and shorts, printed with a name and number like the adult shirts. Tell us your child&rsquo;s age and we will confirm the size.</p></details>
       <details><summary>Do you deliver outside Lagos?</summary><p>Yes. Collect from 23 Idimu Road, Ikotun (Monday to Saturday, 8AM to 7PM) or we deliver nationwide.</p></details>
       <details><summary>My club is not on the rack. Can I still get it?</summary><p>Message us the club and the kit you want. We will tell you what is available and how soon.</p></details>
       <details><summary>Do you make kits for teams and groups?</summary><p>Yes. Mix your colours in the Team Kits section and send the design, or just tell us the colours, the number of players and any logos. We send one quote for the full set.</p></details>
@@ -568,7 +635,7 @@ footer{background:#04050c;border-top:1px solid var(--line);padding-block:52px 12
       <p>Jerseys, custom prints and streetwear<br>by TheTalkingArts.</p>
       <a class="print" href="index.html">Need printing for your brand? Visit TheTalkingArts Print &rarr;</a>
     </div>
-    <div><h4>Shop</h4><a href="#rack">Club jerseys</a><a href="#custom">Name &amp; number</a><a href="#label">The label</a><a href="#squad">Team kits</a></div>
+    <div><h4>Shop</h4><a href="#rack">Club jerseys</a><a href="#custom">Name &amp; number</a><a href="#work">Real prints</a><a href="#label">The label</a><a href="#squad">Team kits</a><a href="#help">Sizes &amp; help</a></div>
     <div><h4>Workshop</h4><p>23 Idimu Road, Ikotun</p><p>Lagos, Nigeria</p><p>Mon&ndash;Sat: 8AM&ndash;7PM</p><p>+234 708 455 4203</p></div>
     <div><h4>Follow</h4><a href="https://instagram.com/talkingartsprint" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@the_talking_artprints" target="_blank" rel="noopener">TikTok</a></div>
   </div>
@@ -592,6 +659,13 @@ footer{background:#04050c;border-top:1px solid var(--line);padding-block:52px 12
   <a class="btn btn-wa" id="obarSend" href="https://wa.me/2347084554203" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg>Send order</a>
 </div>
 
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo of a printed shirt">
+  <button class="dr-x lb-x" id="lbX" type="button" aria-label="Close photo">&times;</button>
+  <button class="lb-nav prev" id="lbPrev" type="button" aria-label="Previous photo">&lsaquo;</button>
+  <div class="lb-in"><img id="lbImg" alt=""><p id="lbCap"></p><a class="btn btn-wa" id="lbWa" href="https://wa.me/2347084554203" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg>Order one like this</a></div>
+  <button class="lb-nav next" id="lbNext" type="button" aria-label="Next photo">&rsaquo;</button>
+</div>
+
 <div class="toast" id="toast" role="status" aria-live="polite"><span id="toastMsg"></span><button type="button" id="toastBtn">View bag</button></div>
 <a class="waf" href="https://wa.me/2347084554203?text=Hi%20TTA%20Wear!%20I%20have%20a%20question." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg><span>Chat on WhatsApp</span></a>
 <div class="cookie" id="cookie">
@@ -608,24 +682,24 @@ footer{background:#04050c;border-top:1px solid var(--line);padding-block:52px 12
    CATALOGUE — edit this block to change stock, prices and photos.
    Prices are in naira. To use a real product photo instead of the
    drawn garment, add  img:'your-photo.jpg'  to any jersey, or to
-   any colour of a label piece.
+   any colour of a label piece. Photos live in the wear-img folder.
    ============================================================ */
 var WA='2347084554203';
 var SIZES=['S','M','L','XL','XXL'];
 var PRINT_FEE=3000;   // name + number printing, added to the jersey price
 var KITS=[
-  {id:'nga-h',club:'Nigeria',kit:'Super Eagles home',league:'Nigeria',price:15000,base:'#0c8f43',sleeve:'#0a6e33',trim:'#ffffff',pattern:'zig',stripe:'#c8f56a',collar:'v'},
+  {id:'bar-h',club:'Barcelona',kit:'Home kit',league:'La Liga',price:15000,base:'#1b3fb5',trim:'#12163f',crest:'#f7d417',ink:'#f7d417',pattern:'stripes',stripe:'#9e1b3c',photos:['barca-gold-21','barca-kids-set']},
+  {id:'che-h',club:'Chelsea',kit:'Home kit',league:'Premier League',price:15000,base:'#1736d6',trim:'#132bb0',pipe:'#f5d90a',crest:'#f5d90a',ink:'#ffffff',photos:['chelsea-opeyemi','chelsea-ala-gee','chelsea-olaitan','chelsea-kids-set']},
+  {id:'acm-h',club:'AC Milan',kit:'Home kit',league:'More clubs',price:15000,base:'#d4161c',sleeve:'#16161b',trim:'#d4161c',crest:'#ffffff',ink:'#ffffff',pattern:'wide',stripe:'#16161b',tint:'#d4161c',photos:['milan-opeyemi','milan-ala-gee']},
+  {id:'rma-n',club:'Real Madrid',kit:'Navy kit',league:'La Liga',price:15000,base:'#1c2a6b',sleeve:'#efe6c8',trim:'#1c2a6b',cuff:'#1c2a6b',crest:'#efe6c8',ink:'#ffffff',pattern:'pin',stripe:'#7f93e6',tint:'#3350c4',photos:['madrid-back-vii','madrid-front']},
   {id:'ars-h',club:'Arsenal',kit:'Home kit',league:'Premier League',price:15000,base:'#db1f2a',sleeve:'#ffffff',trim:'#ffffff',cuff:'#db1f2a'},
-  {id:'che-h',club:'Chelsea',kit:'Home kit',league:'Premier League',price:15000,base:'#1a43c9',trim:'#ffffff',collar:'v'},
   {id:'mun-h',club:'Manchester United',kit:'Home kit',league:'Premier League',price:15000,base:'#c8141c',trim:'#14141a',hem:true},
   {id:'liv-h',club:'Liverpool',kit:'Home kit',league:'Premier League',price:15000,base:'#b30f29',trim:'#ffffff',pattern:'pin',stripe:'#ffffff',collar:'v'},
   {id:'mci-h',club:'Manchester City',kit:'Home kit',league:'Premier League',price:15000,base:'#7cc4ee',trim:'#14284f',ink:'#14284f'},
   {id:'rma-h',club:'Real Madrid',kit:'Home kit',league:'La Liga',price:15000,base:'#fbfbf8',trim:'#c8a44d',pipe:'#c8a44d',ink:'#1b2a5e',tint:'#c8a44d'},
-  {id:'bar-h',club:'Barcelona',kit:'Home kit',league:'La Liga',price:15000,base:'#173a8e',trim:'#f0c02e',ink:'#f0c02e',pattern:'stripes',stripe:'#a8123e'},
   {id:'psg-h',club:'PSG',kit:'Home kit',league:'More clubs',price:15000,base:'#0f1d4a',trim:'#ffffff',pattern:'band',stripe:'#d81f2a',stripe2:'#ffffff',tint:'#3350c4'},
-  {id:'bay-h',club:'Bayern Munich',kit:'Home kit',league:'More clubs',price:15000,base:'#d2122e',trim:'#ffffff',pipe:'#ffffff',collar:'v'},
-  {id:'acm-h',club:'AC Milan',kit:'Home kit',league:'More clubs',price:15000,base:'#c1121f',sleeve:'#16161b',trim:'#ffffff',pattern:'stripes',stripe:'#16161b',tint:'#c1121f'},
-  {id:'mia-h',club:'Inter Miami',kit:'Home kit',league:'More clubs',price:15000,base:'#f5a6c0',trim:'#14141a',ink:'#14141a'}
+  {id:'mia-h',club:'Inter Miami',kit:'Home kit',league:'More clubs',price:15000,base:'#f5a6c0',trim:'#14141a',ink:'#14141a'},
+  {id:'nga-h',club:'Nigeria',kit:'Super Eagles home',league:'Nigeria',price:15000,base:'#0c8f43',sleeve:'#0a6e33',trim:'#ffffff',pattern:'zig',stripe:'#c8f56a',collar:'v'}
 ];
 var LABEL=[
   {id:'tee',name:'Signature Tee',type:'tee',price:9000,blurb:'Our everyday tee, with the line we live by across the chest.',colors:[
@@ -635,8 +709,26 @@ var LABEL=[
   {id:'hood',name:'Statement Hoodie',type:'hoodie',price:22000,blurb:'A pullover with the TTA mark, for cold nights and late kick-offs.',colors:[
     {n:'Black',base:'#17181f',ink:'#4f82ff'},
     {n:'Royal',base:'#1e56e6',ink:'#ffffff'},
-    {n:'Chalk',base:'#eef0f5',ink:'#1e56e6'}]}
+    {n:'Chalk',base:'#eef0f5',ink:'#1e56e6'}]},
+  {id:'cap',name:'TTA Trucker Cap',type:'cap',price:6000,sizes:['One size'],blurb:'The cap from our flat lays. White front, black mesh, TTA up top.',colors:[
+    {n:'Monochrome',base:'#ffffff',ink:'#15161c',img:'wear-img/cap.webp'}]}
 ];
+/* Real photos. Each kit above lists the ones that show it (photos:[...]);
+   WORK is the order of the "Real shirts, real names" gallery. */
+var PHOTO={
+  'barca-gold-21':{tag:'Barcelona',cap:'GOLD 21',alt:'Back of a Barcelona shirt on a hanger, printed GOLD 21 in yellow'},
+  'barca-kids-set':{tag:"Barcelona kids' set",cap:'WURAOLA 99',alt:"A Barcelona kids' shirt and shorts laid flat beside a TTA trucker cap, printed WURAOLA 99"},
+  'chelsea-kids-set':{tag:"Chelsea kids' set",cap:'WURAOLA 99',alt:"A Chelsea kids' shirt and shorts laid flat beside a TTA trucker cap, printed WURAOLA 99"},
+  'chelsea-ala-gee':{tag:'Chelsea',cap:'ALA-GEE 99',alt:'Back of a Chelsea shirt on a hanger, printed with a name and the number 99 in white'},
+  'chelsea-olaitan':{tag:'Chelsea',cap:'OLAITAN 04',alt:'A Chelsea shirt laid flat beside a TTA trucker cap, printed OLAITAN 04 in white'},
+  'chelsea-opeyemi':{tag:'Chelsea',cap:'OPEYEMI 99',alt:'Back of a Chelsea shirt on a hanger, printed OPEYEMI 99 in white'},
+  'milan-opeyemi':{tag:'AC Milan',cap:'OPEYEMI 99',alt:'Back of an AC Milan shirt on a hanger, printed OPEYEMI 99 in white'},
+  'milan-ala-gee':{tag:'AC Milan',cap:'ALA-GEE 99',alt:'Back of an AC Milan shirt on a hanger, printed with a name and the number 99 in white'},
+  'madrid-back-vii':{tag:'Real Madrid',cap:'Roman numeral VII',alt:'A man on a five-a-side pitch, seen from behind, in a navy Real Madrid shirt printed with a name and the Roman numeral seven'},
+  'madrid-front':{tag:'Real Madrid',cap:'On the pitch',alt:'A man standing on a five-a-side pitch, looking down, in a navy Real Madrid shirt with cream sleeves'},
+  'orange-afolabi-vii':{tag:'Away kit',cap:'AFOLABI VII',alt:'A man on a pitch, seen from above and behind, in an orange shirt printed AFOLABI and the Roman numeral seven'}
+};
+var WORK=['barca-gold-21','madrid-back-vii','chelsea-kids-set','milan-opeyemi','orange-afolabi-vii','barca-kids-set','chelsea-olaitan','madrid-front'];
 /* ============================================================ */
 
 var FONT='Sofia Sans Extra Condensed, Arial Narrow, Impact, sans-serif';
@@ -651,6 +743,7 @@ function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {'&':'&am
 function naira(n){return '₦'+Number(n).toLocaleString('en-NG');}
 function waLink(t){return 'https://wa.me/'+WA+'?text='+encodeURIComponent(t);}
 function lum(hex){var n=parseInt(hex.slice(1),16);return (0.299*(n>>16)+0.587*(n>>8&255)+0.114*(n&255))/255;}
+function near(a,b){var x=parseInt(a.slice(1),16),y=parseInt(b.slice(1),16);return Math.abs((x>>16)-(y>>16))+Math.abs((x>>8&255)-(y>>8&255))+Math.abs((x&255)-(y&255))<90;}
 function inkFor(k){return k.ink||(lum(k.base)>.62?'#0a0f24':'#ffffff');}
 function rect(x,y,w,h,f){return '<rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" fill="'+f+'"/>';}
 function photo(src,alt){return '<img src="'+esc(src)+'" alt="'+esc(alt)+'" loading="lazy" style="width:100%;aspect-ratio:300/320;object-fit:cover;border-radius:10px">';}
@@ -670,6 +763,7 @@ function kitSVG(k,o){
   if(o.hanger)h+='<g fill="none" stroke="#aab3d6" stroke-linecap="round"><path d="M150 16V-8Q150 -17 159 -21Q170 -26 170 -34Q170 -44 159 -44Q151 -44 149 -36" stroke-width="3.5"/><path d="M150 15L110 35M150 15L190 35" stroke-width="5"/></g>';
   h+='<g clip-path="url(#cp-'+nk+')">'+rect(0,0,300,320,k.base);
   if(p==='stripes')for(x=87;x<234;x+=42)h+=rect(x,0,21,320,s);
+  else if(p==='wide')for(x=66;x<234;x+=67.2)h+=rect(x,0,33.6,320,s);
   else if(p==='hoops')for(y=70;y<300;y+=48)h+=rect(0,y,300,24,s);
   else if(p==='halves')h+=rect(150,0,150,320,s);
   else if(p==='sash')h+='<path d="M58 54L112 30L240 256L240 312L194 312Z" fill="'+s+'"/>';
@@ -692,14 +786,14 @@ function kitSVG(k,o){
   }else if(o.slot){
     h+='<rect x="100" y="112" width="100" height="92" rx="8" fill="none" stroke="'+ink+'" stroke-opacity=".7" stroke-width="2" stroke-dasharray="7 6"/><text x="150" y="152"'+T+' font-size="24" letter-spacing="1.5" fill="'+ink+'">YOUR</text><text x="150" y="180"'+T+' font-size="24" letter-spacing="1.5" fill="'+ink+'">DESIGN</text>';
   }else if(!back){
-    h+='<path d="M180 88h20v11q0 10-10 14q-10-4-10-14z" fill="'+(k.cuff||trim)+'" fill-opacity=".94"/>';
+    h+='<path d="M180 88h20v11q0 10-10 14q-10-4-10-14z" fill="'+(k.crest||k.cuff||trim)+'" fill-opacity=".94"/>';
   }
   if(back){
     var nm=String(o.name||''),fs=nm.length<=6?40:nm.length<=9?35:30;
     var busy=!!p&&p!=='pin';
     h+='<g class="pr" fill="'+ink+'" stroke="'+(lum(ink)>.5?'#0a0f24':'#ffffff')+'" stroke-opacity="'+(busy?'.92':'.3')+'" stroke-width="'+(busy?5:2)+'" paint-order="stroke" stroke-linejoin="round"'+(o.ghost?' opacity=".42"':'')+'>';
     if(nm)h+='<text x="150" y="106"'+T+' font-size="'+fs+'" letter-spacing="2">'+esc(nm)+'</text>';
-    if(o.number!=null&&o.number!=='')h+='<text x="150" y="240"'+T+' font-size="158">'+esc(o.number)+'</text>';
+    if(o.number!=null&&o.number!==''){var ns=String(o.number),nf=ns.length<=2?158:ns.length===3?120:ns.length===4?94:ns.length===5?76:62;h+='<text x="150" y="'+Math.round(240-(158-nf)*.3)+'"'+T+' font-size="'+nf+'">'+esc(ns)+'</text>';}
     h+='</g>';
   }
   return h+'</g></svg>';
@@ -721,13 +815,15 @@ function hoodieSVG(k,o){
 
 /* ---------- product index ---------- */
 var PROD={},KIT={};
-KITS.forEach(function(k){KIT[k.id]=k;PROD[k.id]={title:k.club+' ('+k.kit+')',price:k.price,kit:k,cols:[k.base,k.sleeve||k.stripe||k.trim,'#4f82ff'],
+KITS.forEach(function(k){KIT[k.id]=k;PROD[k.id]={title:k.club+' ('+k.kit+')',price:k.price,kit:k,sizes:SIZES,cols:[k.base,k.sleeve||k.stripe||k.trim,'#4f82ff'],
   art:function(o){return k.img?photo(k.img,k.club+' jersey'):kitSVG(k,o||{label:k.club+' jersey'});}};});
 LABEL.forEach(function(l){l.colors.forEach(function(c){var id=l.id+'-'+c.n.toLowerCase(),alt=l.name+' in '+c.n;
-  PROD[id]={title:alt,price:l.price,cols:[c.base,c.ink,'#4f82ff'],
+  PROD[id]={title:alt,price:l.price,sizes:l.sizes||SIZES,cols:[c.base,c.ink,'#4f82ff'],
     art:function(){return c.img?photo(c.img,alt):(l.type==='hoodie'?hoodieSVG(c,{label:alt}):kitSVG(c,{crew:true,print:['INK SPEAKS','louder.'],label:alt}));}};});});
 
-function sizeBtns(){return SIZES.map(function(s){return '<button class="sz" type="button" aria-pressed="false" data-size="'+s+'">'+s+'</button>';}).join('');}
+function sizeBtns(list){list=list||SIZES;return list.map(function(s){return '<button class="sz" type="button" aria-pressed="'+(list.length===1)+'" data-size="'+s+'">'+s+'</button>';}).join('');}
+Object.keys(PHOTO).forEach(function(key){PHOTO[key].src='wear-img/'+key+'.webp';});
+var CAM='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>';
 var FLIP='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 3v5h-5M21 12a9 9 0 0 1-15 6.7L3 16M3 21v-5h5"/></svg>';
 
 /* ---------- tapes ---------- */
@@ -741,7 +837,7 @@ var leagues=['All'];KITS.forEach(function(k){if(leagues.indexOf(k.league)<0)leag
 $('filters').innerHTML=leagues.map(function(l,i){return '<button type="button" aria-pressed="'+(i===0)+'" data-league="'+esc(l)+'">'+esc(l)+'</button>';}).join('');
 $('kitGrid').innerHTML=KITS.map(function(k){
   return '<article class="pc rv" data-id="'+k.id+'" data-league="'+esc(k.league)+'" data-name="'+esc(k.club.toLowerCase())+'" style="--tint:'+(k.tint||k.base)+'">'+
-    '<div class="pc-art"><div class="pc-j" data-view="front">'+cardArt(k,'front')+'</div><span class="pc-tag">'+esc(k.league)+'</span>'+(k.img?'':'<button class="flip" type="button" data-flip aria-label="Turn the '+esc(k.club)+' jersey around">'+FLIP+'<span>Back</span></button>')+'</div>'+
+    '<div class="pc-art"><div class="pc-j" data-view="front">'+cardArt(k,'front')+'</div><span class="pc-tag">'+esc(k.league)+'</span>'+(k.img?'':'<button class="flip" type="button" data-flip aria-label="Turn the '+esc(k.club)+' jersey around">'+FLIP+'<span>Back</span></button>')+(k.photos?'<button class="flip cam" type="button" data-cam="'+k.id+'" aria-label="See real photos of the '+esc(k.club)+' shirt">'+CAM+'<span>Photos</span></button>':'')+'</div>'+
     '<div class="pc-body"><h3>'+esc(k.club)+'</h3><p class="pc-sub">'+esc(k.kit)+'</p>'+
     '<div class="pc-row"><span class="pc-price">'+naira(k.price)+'</span><button class="pc-cust" type="button" data-cust="'+k.id+'">+ Name &amp; number</button></div>'+
     '<div class="sizes" role="group" aria-label="Size for '+esc(k.club)+'">'+sizeBtns()+'</div>'+
@@ -771,16 +867,21 @@ $('labelGrid').innerHTML=LABEL.map(function(l){
   return '<article class="pc lc rv" data-l="'+l.id+'" style="--tint:'+(lum(c.base)<.2?'#4f82ff':c.base)+'">'+
     '<div class="pc-art"><div class="pc-j">'+PROD[id].art()+'</div></div>'+
     '<div class="pc-body"><h3>'+esc(l.name)+'</h3><p class="d">'+esc(l.blurb)+'</p>'+
-    '<div class="pc-row"><span class="pc-price">'+naira(l.price)+'</span><div class="cols" role="radiogroup" aria-label="Colour">'+l.colors.map(function(x,i){return '<button class="col" type="button" role="radio" aria-checked="'+(i===0)+'" data-col="'+i+'" aria-label="'+esc(x.n)+'" title="'+esc(x.n)+'" style="background:'+x.base+'"></button>';}).join('')+'</div></div>'+
-    '<div class="sizes" role="group" aria-label="Size for '+esc(l.name)+'">'+sizeBtns()+'</div>'+
+    '<div class="pc-row"><span class="pc-price">'+naira(l.price)+'</span>'+(l.colors.length>1?'<div class="cols" role="radiogroup" aria-label="Colour">'+l.colors.map(function(x,i){return '<button class="col" type="button" role="radio" aria-checked="'+(i===0)+'" data-col="'+i+'" aria-label="'+esc(x.n)+'" title="'+esc(x.n)+'" style="background:'+x.base+'"></button>';}).join('')+'</div>':'')+'</div>'+
+    '<div class="sizes" role="group" aria-label="Size for '+esc(l.name)+'">'+sizeBtns(l.sizes)+'</div>'+
     '<button class="add" type="button" data-add="'+id+'">Add to bag</button></div></article>';
 }).join('')+
   '<article class="pc lc cta rv"><div class="pc-art"><div class="pc-j">'+kitSVG({base:'#f3f5fa',trim:'#d5d9e4',ink:'#1e56e6'},{crew:true,slot:true,label:'Plain tee with a space for your own design'})+'</div></div>'+
   '<div class="pc-body"><h3>Your design on a tee</h3><p class="d">Send us your artwork, a slogan or a photo and we will print it for you.</p>'+
   '<a class="add" target="_blank" rel="noopener" href="'+waLink('Hi TTA Wear! I want my own design printed on a tee.\nQuantity: \nSizes: ')+'"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg>Send your design</a></div></article>';
 
+/* ---------- real prints gallery ---------- */
+$('workGrid').innerHTML=WORK.map(function(key,i){var ph=PHOTO[key];
+  return '<button class="shot rv'+(i===0?' big':'')+'" type="button" data-shot="'+i+'" aria-label="Enlarge photo: '+esc(ph.tag+', '+ph.cap)+'"><img src="'+ph.src+'" alt="'+esc(ph.alt)+'" loading="lazy" decoding="async"><span><small>'+esc(ph.tag)+'</small>'+esc(ph.cap)+'</span></button>';
+}).join('')+'<a class="shot next rv" href="#custom"><b>Yours next</b><i>Put your name on it &rarr;</i></a>';
+
 /* ---------- hero stage ---------- */
-var HERO=['nga-h','ars-h','bar-h','che-h','rma-h','mia-h'],DEMO=[['TUNDE','10'],['CHIOMA','7'],['EMEKA','9'],['ZAINAB','11'],['AMAKA','8'],['BOLA','23']];
+var HERO=['bar-h','che-h','acm-h','rma-n','nga-h','ars-h'],DEMO=[['TUNDE','10'],['CHIOMA','7'],['EMEKA','9'],['ZAINAB','11'],['AMAKA','8'],['BOLA','23']];
 var hs={i:0,name:'',num:'',typed:false},htimer=null,hero=$('top'),stage=$('stage');
 $('stageDots').innerHTML=HERO.map(function(id,i){var k=KIT[id];return '<button type="button" data-i="'+i+'" aria-label="Show the '+esc(k.club)+' jersey" title="'+esc(k.club)+'" style="background:linear-gradient(135deg,'+k.base+' 0 50%,'+(k.sleeve||k.stripe||k.base)+' 50% 100%)"></button>';}).join('');
 function showHero(i,animate){
@@ -832,7 +933,7 @@ function burst(el,cols){
 
 /* ---------- bag ---------- */
 var bag=[];
-try{var saved=JSON.parse(localStorage.getItem('ttaWearBag')||'[]');if(Array.isArray(saved))bag=saved.filter(function(it){return it&&PROD[it.id]&&SIZES.indexOf(it.size)>=0&&it.qty>0;});}catch(e){}
+try{var saved=JSON.parse(localStorage.getItem('ttaWearBag')||'[]');if(Array.isArray(saved))bag=saved.filter(function(it){return it&&PROD[it.id]&&PROD[it.id].sizes.indexOf(it.size)>=0&&it.qty>0;});}catch(e){}
 function save(){try{localStorage.setItem('ttaWearBag',JSON.stringify(bag));}catch(e){}}
 function printed(it){return !!(it.name||it.num);}
 function unit(it){return PROD[it.id].price+(printed(it)?PRINT_FEE:0);}
@@ -840,7 +941,7 @@ function total(){return bag.reduce(function(t,it){return t+unit(it)*it.qty;},0);
 function count(){return bag.reduce(function(t,it){return t+it.qty;},0);}
 function printText(it){return [it.name,it.num].filter(Boolean).join(' ')+(it.pc?' in '+it.pc.toLowerCase():'');}
 function bagMessage(){
-  var lines=bag.map(function(it,i){return (i+1)+') '+PROD[it.id].title+', size '+it.size+' x'+it.qty+(printed(it)?', print: '+printText(it):'')+' - '+naira(unit(it)*it.qty);});
+  var lines=bag.map(function(it,i){return (i+1)+') '+PROD[it.id].title+(it.size==='One size'?', one size':', size '+it.size)+' x'+it.qty+(printed(it)?', print: '+printText(it):'')+' - '+naira(unit(it)*it.qty);});
   return 'Hi TTA Wear! I want to order:\n\n'+lines.join('\n')+'\n\nSubtotal: '+naira(total())+'\nDelivery area: ';
 }
 function renderBag(){
@@ -856,7 +957,7 @@ function renderBag(){
   }
   $('bagList').innerHTML=bag.map(function(it,i){
     var p=PROD[it.id];
-    return '<li class="bl"><div class="bl-art">'+p.art()+'</div><div><b>'+esc(p.title)+'</b><span>Size '+it.size+(printed(it)?' &middot; Print: '+esc(printText(it)):'')+'</span>'+
+    return '<li class="bl"><div class="bl-art">'+p.art()+'</div><div><b>'+esc(p.title)+'</b><span>'+(it.size==='One size'?'One size':'Size '+it.size)+(printed(it)?' &middot; Print: '+esc(printText(it)):'')+'</span>'+
       (p.kit&&!printed(it)?'<br><button type="button" class="bl-up" data-up="'+i+'">Add name &amp; number, +'+naira(PRINT_FEE)+'</button>':'')+
       '<div class="qty"><button type="button" data-q="-1" data-i="'+i+'" aria-label="One fewer">&minus;</button><i>'+it.qty+'</i><button type="button" data-q="1" data-i="'+i+'" aria-label="One more">+</button><button type="button" class="rm" data-rm="'+i+'">Remove</button></div></div>'+
       '<div class="bl-price">'+naira(unit(it)*it.qty)+'</div></li>';
@@ -901,6 +1002,8 @@ $('toastBtn').addEventListener('click',function(){$('toast').classList.remove('o
 function needSize(box){box.classList.remove('need');void box.offsetWidth;box.classList.add('need');setTimeout(function(){box.classList.remove('need');},1800);}
 document.querySelector('main').addEventListener('click',function(e){
   var t=e.target,el;
+  if((el=t.closest('[data-cam]'))){openLb(KIT[el.getAttribute('data-cam')].photos,0);return;}
+  if((el=t.closest('[data-shot]'))){openLb(WORK,+el.getAttribute('data-shot'));return;}
   if((el=t.closest('.sz'))){var box=el.parentNode;box.classList.remove('need');box.querySelectorAll('.sz').forEach(function(b){b.setAttribute('aria-pressed',b===el);});if(box.id==='custSizes'){cust.size=el.getAttribute('data-size');renderCust(true);}return;}
   if((el=t.closest('button[data-add]'))){var card=el.closest('.pc'),pick=card.querySelector('.sz[aria-pressed="true"]');if(!pick){needSize(card.querySelector('.sizes'));return;}addItem(el.getAttribute('data-add'),pick.getAttribute('data-size'),'','','',el);return;}
   if((el=t.closest('[data-flip]'))){
@@ -922,34 +1025,36 @@ document.querySelector('main').addEventListener('click',function(e){
 
 /* ---------- customiser ---------- */
 var INKS=[['Kit colour',''],['White','#ffffff'],['Navy','#101a4a'],['Gold','#f0c02e']];
-var cust={kit:'ars-h',name:'',num:'',size:'',ink:0};
+var cust={kit:'bar-h',name:'',num:'',size:'',ink:0,roman:false};
+function roman(n){n=+n;var r='';[[90,'XC'],[50,'L'],[40,'XL'],[10,'X'],[9,'IX'],[5,'V'],[4,'IV'],[1,'I']].forEach(function(x){while(n>=x[0]){r+=x[1];n-=x[0];}});return r;}
+function numShown(){return cust.num?(cust.roman?(roman(cust.num)||cust.num):cust.num):'';}
 $('custKits').innerHTML=KITS.map(function(k){
   return '<button class="sw" type="button" role="radio" aria-checked="false" data-kit="'+k.id+'" aria-label="'+esc(k.club)+'" title="'+esc(k.club)+'" style="background:linear-gradient(135deg,'+k.base+' 0 50%,'+(k.sleeve||k.stripe||k.base)+' 50% 100%)"></button>';
 }).join('');
 $('custSizes').innerHTML=sizeBtns();
-$('quick').innerHTML=['7','9','10','11','23'].map(function(n){return '<button type="button" data-n="'+n+'" aria-label="Use number '+n+'">'+n+'</button>';}).join('');
+$('quick').innerHTML=['7','9','10','11','23'].map(function(n){return '<button type="button" data-n="'+n+'" aria-label="Use number '+n+'">'+n+'</button>';}).join('')+'<button type="button" class="rom" id="rom" aria-pressed="false">Roman numerals</button>';
 function renderCust(quiet){
   var p=PROD[cust.kit],k=p.kit,own=inkFor(k).toLowerCase();
-  if(cust.ink&&INKS[cust.ink][1]===own)cust.ink=0;
+  if(cust.ink&&near(INKS[cust.ink][1],own))cust.ink=0;
   var ink=INKS[cust.ink][1]||own;
-  if(!quiet)$('custPrev').innerHTML=kitSVG(k,{view:'back',ink:ink,name:cust.name||'YOUR NAME',number:cust.num||'10',label:k.club+' jersey, back, printed with '+(cust.name||'your name')+' '+(cust.num||'10')});
+  if(!quiet)$('custPrev').innerHTML=kitSVG(k,{view:'back',ink:ink,name:cust.name||'YOUR NAME',number:numShown()||(cust.roman?'X':'10'),label:k.club+' jersey, back, printed with '+(cust.name||'your name')+' '+(numShown()||'10')});
   $('custPrev').style.setProperty('--kit',k.tint||k.base);
   $('custKits').querySelectorAll('.sw').forEach(function(b){b.setAttribute('aria-checked',b.getAttribute('data-kit')===cust.kit);});
-  $('custInk').innerHTML=INKS.map(function(x,i){return i&&x[1]===own?'':'<button class="sw" type="button" role="radio" aria-checked="'+(i===cust.ink)+'" data-ink="'+i+'" aria-label="'+x[0]+'" title="'+x[0]+'" style="background:'+(x[1]||own)+'"></button>';}).join('');
+  $('custInk').innerHTML=INKS.map(function(x,i){return i&&near(x[1],own)?'':'<button class="sw" type="button" role="radio" aria-checked="'+(i===cust.ink)+'" data-ink="'+i+'" aria-label="'+x[0]+'" title="'+x[0]+'" style="background:'+(x[1]||own)+'"></button>';}).join('');
   $('custSizes').querySelectorAll('.sz').forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-size')===cust.size);});
   $('custWhat').textContent=k.club+' jersey + name and number';
   $('custPrice').textContent=naira(p.price+PRINT_FEE);
-  $('custWa').href=waLink('Hi TTA Wear! I want this custom jersey:\n\n'+p.title+'\nSize: '+(cust.size||'please advise')+'\nName: '+(cust.name||'-')+'\nNumber: '+(cust.num||'-')+(cust.ink?'\nPrint colour: '+INKS[cust.ink][0]:'')+'\n\nDelivery area: ');
+  $('custWa').href=waLink('Hi TTA Wear! I want this custom jersey:\n\n'+p.title+'\nSize: '+(cust.size||'please advise')+'\nName: '+(cust.name||'-')+'\nNumber: '+(numShown()||'-')+(cust.roman&&cust.num?' (Roman numerals)':'')+(cust.ink?'\nPrint colour: '+INKS[cust.ink][0]:'')+'\n\nDelivery area: ');
 }
 $('custKits').addEventListener('click',function(e){var b=e.target.closest('.sw');if(!b)return;cust.kit=b.getAttribute('data-kit');renderCust();});
 $('custInk').addEventListener('click',function(e){var b=e.target.closest('.sw');if(!b)return;cust.ink=+b.getAttribute('data-ink');renderCust();});
-$('quick').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;cust.num=b.getAttribute('data-n');$('custNum').value=cust.num;renderCust();});
+$('quick').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;if(b.id==='rom'){cust.roman=!cust.roman;b.setAttribute('aria-pressed',cust.roman);renderCust();return;}cust.num=b.getAttribute('data-n');$('custNum').value=cust.num;renderCust();});
 $('custName').addEventListener('input',function(){var v=cleanName(this.value);if(v!==this.value)this.value=v;cust.name=v.trim();renderCust();});
 $('custNum').addEventListener('input',function(){var v=cleanNum(this.value);if(v!==this.value)this.value=v;cust.num=v;renderCust();});
 $('custAdd').addEventListener('click',function(){
   if(!cust.size){needSize($('custSizes'));return;}
   if(!cust.name&&!cust.num){$('custName').focus();toast('Type a name or number first');return;}
-  addItem(cust.kit,cust.size,cust.name,cust.num,cust.ink?INKS[cust.ink][0]:'',this);
+  addItem(cust.kit,cust.size,cust.name,numShown(),cust.ink?INKS[cust.ink][0]:'',this);
 });
 
 /* ---------- team kit designer ---------- */
@@ -973,6 +1078,31 @@ $('dTrim').addEventListener('click',function(e){var b=e.target.closest('.sw');if
 $('dPat').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;des.pat=+b.getAttribute('data-p');renderDes();});
 $('dMinus').addEventListener('click',function(){des.n=Math.max(2,des.n-1);renderDes();});
 $('dPlus').addEventListener('click',function(){des.n=Math.min(60,des.n+1);renderDes();});
+
+/* ---------- rail film ---------- */
+var vid=$('railVid'),vctl=$('railCtl'),wantPlay=!reduce;
+function vset(){var on=!vid.paused;vctl.innerHTML=on?'<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg>':'<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg>';vctl.setAttribute('aria-label',on?'Pause the video':'Play the video');}
+vid.addEventListener('play',vset);vid.addEventListener('pause',vset);vset();
+vctl.addEventListener('click',function(){if(vid.paused){wantPlay=true;var pr=vid.play();if(pr&&pr.catch)pr.catch(function(){});}else{wantPlay=false;vid.pause();}});
+if('IntersectionObserver' in window)new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting&&wantPlay){var pr=vid.play();if(pr&&pr.catch)pr.catch(function(){});}else vid.pause();});},{threshold:.3}).observe(vid);
+
+/* ---------- photo lightbox ---------- */
+var lb=$('lb'),lbSet=[],lbI=0,lbFocus=null;
+function showLb(){
+  var ph=PHOTO[lbSet[lbI]];
+  $('lbImg').src=ph.src;$('lbImg').alt=ph.alt;
+  $('lbCap').innerHTML=esc(ph.tag+' \u00B7 '+ph.cap)+(lbSet.length>1?'<small>'+(lbI+1)+' of '+lbSet.length+'</small>':'');
+  $('lbWa').href=waLink('Hi TTA Wear! I want a shirt like this one on your site: '+ph.tag+' ('+ph.cap+').\nSize: \nName and number: ');
+  $('lbPrev').hidden=$('lbNext').hidden=lbSet.length<2;
+}
+function openLb(set,i){lbSet=set;lbI=i;lbFocus=document.activeElement;showLb();lb.classList.add('on');$('lbX').focus();}
+function closeLb(){lb.classList.remove('on');if(lbFocus&&lbFocus.focus)lbFocus.focus();}
+function stepLb(d){lbI=(lbI+d+lbSet.length)%lbSet.length;showLb();}
+$('lbX').addEventListener('click',closeLb);
+$('lbPrev').addEventListener('click',function(){stepLb(-1);});
+$('lbNext').addEventListener('click',function(){stepLb(1);});
+lb.addEventListener('click',function(e){if(e.target===lb)closeLb();});
+document.addEventListener('keydown',function(e){if(!lb.classList.contains('on'))return;if(e.key==='Escape')closeLb();else if(e.key==='ArrowLeft')stepLb(-1);else if(e.key==='ArrowRight')stepLb(1);});
 
 renderCust();renderDes();renderBag();
 
