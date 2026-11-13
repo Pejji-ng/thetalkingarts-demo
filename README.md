@@ -17,7 +17,7 @@ All site files live at the repo root:
 - `*.jpg` — images (cards, brand kit, og, packaging, etc.)
 
 Edit, commit, and push to `main`. The deploy workflow stages everything except
-repo metadata (`.git`, `.github`, this `README.md`) and the separate `wear/` site, and
+repo metadata (`.git`, `.github`, this `README.md`) and the separate `wear/` and `clothing/` sites, and
 publishes it to `thetalkingarts.com` within a minute or two.
 
 To preview without going live, push to a different branch (it will build a
@@ -43,3 +43,24 @@ To put it on a subdomain such as `wear.thetalkingarts.com`: in Cloudflare, open 
 `tta-wear` Pages project, go to Custom domains, and add the subdomain (Cloudflare creates
 the CNAME record). Then change the four `tta-wear.pages.dev` addresses at the top of
 `wear/index.html` to the new address so link previews and search engines use it.
+
+## TTA Clothing (separate site)
+
+The clothing label's own site lives in `clothing/`. Like TTA Wear, it is **not part of the
+print site**: it has its own Cloudflare Pages project and workflow, and is excluded from the
+print site's deploy.
+
+- **Planned address:** https://clothing.thetalkingarts.com
+- **Hosting:** Cloudflare Pages project `tta-clothing`
+- **Deploy:** `.github/workflows/deploy-clothing.yml` publishes the `clothing/` folder whenever a
+  file in it changes.
+- `clothing/index.html` — the whole site (self-contained: inline CSS + JS). Pieces, prices,
+  photos and the lines the hero tee cycles through are edited in the `CATALOGUE` block at the
+  top of its `<script>`. Orders are sent as a WhatsApp message, so there is no backend.
+- `clothing/img/` — real photos of the cap and the share image
+- `clothing/_headers` — Cloudflare Pages headers
+- The bubble TTA mark in the page is a vector traced from a photo of the cap. If you have the
+  original artwork, replace the path inside `<symbol id="tta">`.
+
+To put it on the subdomain: in Cloudflare, open the `tta-clothing` Pages project, go to
+Custom domains, and add `clothing.thetalkingarts.com` (Cloudflare creates the CNAME record).

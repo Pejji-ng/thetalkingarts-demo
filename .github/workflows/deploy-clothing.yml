@@ -1,0 +1,34 @@
+name: Deploy TTA Clothing to Cloudflare Pages (tta-clothing)
+
+# TTA Clothing is its own site, separate from the print studio and from TTA Wear.
+# This publishes ONLY the clothing/ folder to its own Pages project (tta-clothing).
+# It never deploys to tta-dazzle, so thetalkingarts.com is not affected by anything here.
+on:
+  push:
+    branches: [main, claude/inspiring-archimedes-pp6kg5]
+    paths:
+      - 'clothing/**'
+      - '.github/workflows/deploy-clothing.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: tta-clothing-pages-deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: 2e3840298d01bbfc3bad649f37ce39e5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Create the tta-clothing project on first run
+        run: npx -y wrangler@latest pages project create tta-clothing --production-branch=main || echo "Project already exists, or could not be created (the deploy step will say why)."
+
+      - name: Deploy clothing/ to Cloudflare Pages
+        run: npx -y wrangler@latest pages deploy clothing --project-name=tta-clothing --branch=main --commit-dirty=true
